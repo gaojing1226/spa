@@ -1,0 +1,22 @@
+*{
+	margin-top: 10px;
+}
+.rectangle {
+  width: 370px;
+  margin: 50px auto;
+}
+.formtips{
+	color: red;
+  	margin-left: 40px;
+  	font-size: 12px;
+  	margin-bottom: -18px;
+}
+strong{
+	color: red;
+}
+.rectangle__calc{
+	margin-left: 42px;
+}
+.rectangle__perimeter,.rectangle__area{
+	background-color: #D8D8D8;
+}
