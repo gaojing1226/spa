@@ -1,6 +1,5 @@
-
 $(function(){
-	$('form :input').blur(function(){
+  $('form:input').blur(function(){
 		//去掉先前的提醒
 		var $parent = $(this).parent();
 		$parent.find(".formtips").remove();
@@ -23,7 +22,7 @@ $(function(){
 
 		//判断长度为空或非数字
 		if($(this).is('.rectangle__height')){
-			if(this.value=="" ){
+			if(this.value =="" ){
 				var errorMsg2 = '高度不能为空!';
                 $(this).next().after('<div class="formtips onError2">'+errorMsg2+'</div>');
 			}
