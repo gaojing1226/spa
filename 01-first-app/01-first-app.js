@@ -1,4 +1,3 @@
-
 $(function(){
 	$('form :input').blur(function(){
 		//去掉先前的提醒
