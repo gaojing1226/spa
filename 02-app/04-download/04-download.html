@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="04-download.css"> 
 </head>  
 <body>
-    <span>下载进度：</span><div id="div1"></div>
-    <button onclick="down()">开始</button><button onclick="end()">暂停</button><button onclick="reset()">重置</button>   
+    <span>下载进度：</span><progress id="div1" value="0" max="100"></progress>
+    <div>
+    	 <button onclick="down()">开始</button><button onclick="end()">暂停</button><button onclick="reset()">重置</button>   
+    </div>
+   
 </body>  
 </html>  
