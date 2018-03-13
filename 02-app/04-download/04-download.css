@@ -1,20 +1,13 @@
-#progress{
-	background:#0f0;  
-
-   float:left;
-
-   height:25px;  
-
-   line-height:25px; 
-
-   text-align:center;  
+*{
+	margin: 10px 40px;
 }
-.test{  
-
-   width:450px;  
-
-   border:1px solid #000;  
-
-   height:25px;  
-
- } 
+#div1 {  
+    width: 0px;  
+    height: 20px;  
+    background-color: #6495ED;  
+    text-align: center;
+    border:1px solid #FFFFFF;
+}
+button{
+	margin-right: 10px;
+}

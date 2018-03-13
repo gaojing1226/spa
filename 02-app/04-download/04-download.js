@@ -1,25 +1,29 @@
- $(function(){
- function haha(){  
+var count = 0;  
+var tid;  
 
-  var jindutiao = document.getElementById("progress");  
+function getCount() {  
+    count++;  
+    if (count > 100) {  
+        end();  
+    } else {  
+        var div = document.getElementById("div1");  
+        div.innerText = count + "%";
+        div.style.width = 3 * count + "px"; 
+    }  
+}  
+  
+function down() {  
+    tid = setInterval("getCount()", 100);  
+}  
+  
+function end() {  
+    clearInterval(tid);
+}
 
-  jindutiao.style.width = parseInt(jindutiao.style.width) + 1 + "%";
-
-  jindutiao.innerHTML = jindutiao.style.width;  
-
-  if(jindutiao.style.width == "100%"){  
-
-     window.clearInterval(shijian);  
-
-  }  
-
- }  
-
- var shijian = window.setInterval(function(){haha();},100); 
-
-window.onload = function(){  
-
-   shijian;  
-
-} 
-}); 
+function reset(){
+    count=0;
+    end();
+    var div = document.getElementById("div1");
+    div.innerText = count + "%"  
+    div.style.width = count + "px";
+}
