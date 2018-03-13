@@ -1,20 +1,17 @@
 var countdown=9; 
-function settime(val) { 
-	if (countdown == 0) { 
-		val.removeAttribute("disabled"); 
-		val.value="同意";
-		clearInterval(btn);	
+var timeEnd =setInterval('settime()',1000);
+function settime() {
+	countdown--;
+	if (countdown < 0 || countdown == 0) {
+		$('#btn').html("同意");
+		$('#btn').attr("disabled",false); 			
 		$("#btn").click(function(){
-			alert("同意");
-		})		
+			alert("就知道你会同意的");
+		});	
+		clearInterval(timeEnd);
 	}
 	else { 
-		val.setAttribute("disabled", true); 
-		val.value="同意(" + countdown + "s)"; 
-		countdown--; 
+		$('#btn').attr("disabled", true); 
+		$('#btn').html("同意(" + countdown + "s)"); 
 	}
-
-	setTimeout(function() { 
-		settime(val);
-	},1000)
 }
