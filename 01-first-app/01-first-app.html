@@ -11,16 +11,16 @@
 <form method="post" action="">
 	<div class="rectangle">
 		<label for="username">宽度:</label>
-		<input class="rectangle__width" type="textbox" autofocus="autofocus"/>
-		<strong class='width'> *</strong>
+		<input class="rectangle__width" type="number" autofocus="autofocus" required step="0.000001" />
+		<span></span>
 		<br>
 
 		<label for="username">高度:</label>
-		<input class="rectangle__height"  type="textbox" disabled="false"/>
-		<strong class='high'> *</strong>
+		<input class="rectangle__height"  type="number" required step="0.00001"/>
+		<span></span>
 		<br>
 		
-		<input class="rectangle__calc"  type="button"/ value="计算">
+		<input class="rectangle__calc"  type="submit" value="计算">
 		<br>
 
 		<label for="username">周长:</label>
