@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta>
-<title></title>
+<title>矩形计算</title>
 <script src="jquery-2.2.3.min.js" type="text/javascript"></script>
 <script src="01-first-app.js" type="text/javascript"></script>
 <link rel="stylesheet" href="01-first-app.css">
@@ -10,24 +10,24 @@
 <body>
 <form method="post" action="">
 	<div class="rectangle">
-		<label for="username">宽度:</label>
-		<input class="rectangle__width" type="number" autofocus="autofocus" required step="0.000001" />
-		<span></span>
+		<label for="weight">宽度:</label>
+		<input class="rectangle__width" type="textbox" autofocus/>
+		<strong class='width'> *</strong>
 		<br>
 
-		<label for="username">高度:</label>
-		<input class="rectangle__height"  type="number" required step="0.00001"/>
-		<span></span>
+		<label for="high">高度:</label>
+		<input class="rectangle__height"  type="textbox" disabled="false"/>
+		<strong class='high'> *</strong>
 		<br>
 		
-		<input class="rectangle__calc"  type="submit" value="计算">
+		<input class="rectangle__calc"  type="button"/ value="计算">
 		<br>
 
-		<label for="username">周长:</label>
+		<label for="permiter">周长:</label>
 		<input class="rectangle__perimeter"  type="textbox" disabled="false" />
 		<br>
 
-		<label for="username">面积:</label>
+		<label for="area">面积:</label>
 		<input class="rectangle__area"  type="textbox" disabled="false"/>
 	</div>
 </form>

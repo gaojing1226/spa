@@ -5,16 +5,15 @@
   width: 370px;
   margin: 50px auto;
 }
-input:invalid+span:after {
-  content: '✖';
-  color: red;
+.formtips{
+	color: red;
+  	margin-left: 40px;
+  	font-size: 12px;
+  	margin-bottom: -18px;
 }
-
-input:valid+span:after {
-  content: '✓';
-  color: green;
+strong{
+	color: red;
 }
-
 .rectangle__calc{
 	margin-left: 42px;
 }
