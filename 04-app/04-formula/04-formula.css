@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.main{
+	margin-left: 10px;
+}
+.button{
+	margin: 10px 0;
+}
+.formula{
+	margin: 15px;
+}
