@@ -47,26 +47,24 @@ var dataObject = [
     主键:'N',
     备注: ''
   }
-
 ]
  
 var Element = document.getElementById('main');
 var hot = new Handsontable(Element,{
   data:dataObject,
-  contextMenu: true,          // 启用右键菜单
-    manualRowResize : true,     // 允许行拖动  
-    manualColumnResize : true,  // 允许列拖动 
-   // stretchH:all,//延伸列的宽度 
-    //mergeCells:true，//合并单元格
-    rowHeaders: true,
-    //colHeaders: true 显示行头列头
-    colHeaders: [
-      '字段',
-      '说明',
-      '数据类型',
-      '允许为空',
-      '主键',
-      '备注'
-    ]
-
+  contextMenu: true,        
+  manualRowResize : true,     // 允许行拖动  
+  manualColumnResize : true,  // 允许列拖动 
+  //stretchH:all,//延伸列的宽度 
+  //mergeCells:true，//合并单元格
+  rowHeaders: true,
+  colHeaders: true, //显示行头列头
+  colHeaders: [
+    '字段',
+    '说明',
+    '数据类型',
+    '允许为空',
+    '主键',
+    '备注'
+  ]
 });
